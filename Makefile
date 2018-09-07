@@ -5,7 +5,7 @@ LD=ld
 
 DIRNAME =
 ASMFLAGS= -I include
-CFLAGS = -I include -Wall -c
+CFLAGS = -I include -Wall -c -fno-pie
 LDFLAGS = -Ttext $(ENTRYPOINT) -s --oformat binary
 
 BOSBOOT = $(BOSBOOTSECTOR) $(BOSLOADER)
